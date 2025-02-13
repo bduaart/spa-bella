@@ -1,0 +1,146 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+    padding: 0px;
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 20;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+    width: 130px;
+    height: 47px;
+    flex: 3;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex: 9;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-title {
+    font-size: 121px;
+    font-weight: 300px;
+    color: #FFFFFF;
+
+}
+
+.hero-subtitle {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.hero-content button {
+    background: #C2A74E;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FFFFFF;
+    border-radius: 40px;
+}
+
+.about-title {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.text-container {
+    flex: 5;
+    font-size: 1.2em;
+    color: #767575
+}
+.dropdown {
+    position: relative;
+}
+
+
+.submenu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    min-width: 200px;
+    z-index: 1000;
+}
+.submenu-container.active {
+    display: block;
+}
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu li a {
+    padding: 10px;
+    color: white;
+    display: block;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.submenu li a:hover {
+    background: gold;
+}

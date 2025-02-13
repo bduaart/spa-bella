@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum Spa & Bem-estar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <video autoplay muted loop id="hero-video">
+            <source src="video/closeup-of-a-woman-s-face-massage-in-a-spa-salon-f-2023-11-27-04-52-37-utc.mov" type="video/mp4">
+        </video>
+        <nav>
+            <div class="logo"> <img src="logo/logo_47.png" alt="logo momentum"></div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Serviços</a>
+                    <div class="submenu-container">
+                    <ul class="submenu">
+                        <li><a href="#">Massagens</a></li>
+                        <li><a href="#">Bem-estar Corporal</a></li>
+                        <li><a href="#">Day Spa</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li><a href="#">Agendar</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1 class="hero-title">Bem-vindo.</h1>
+            <button>AGENDE O SEU MOMENTUM</button>
+            <p class="hero-subtitle">Relaxe, renove, reviva: o equilíbrio que seu corpo e mente merecem.</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="text-container">
+            <h2 class="about-title">Quem Somos</h2>
+            <p>No Momentum, criamos um refúgio de tranquilidade para restaurar seu equilíbrio. Com terapias relaxantes e um ambiente acolhedor, oferecemos massagens e rituais que renovam corpo e mente.
+                Seu bem-estar é nossa prioridade. Agende sua experiência e sinta a diferença.</p>
+        </div>
+        <div class="gallery">
+            <img src="img/img1.png" alt="Spa 1" class="gallery-img img1">
+            <img src="img/img2.png" alt="Spa 2" class="gallery-img img2">
+            <img src="img/img3.png" alt="Spa 3" class="gallery-img img3">
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Entre em Contato</h2>
+        <div class="contact-container">
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <textarea placeholder="Mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Momentum Spa &copy; 2025. Todos os direitos reservados.</p>
+        <p>Design by Isabella Queiroz</p>
+    </footer>
+</body>
+
+</html>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const dropdown = document.querySelector(".dropdown");
+        const submenuContainer = document.querySelector(".submenu-container");
+
+        dropdown.addEventListener("click", function (event) {
+            submenuContainer.classList.toggle("active");
+            event.stopPropagation();
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!dropdown.contains(event.target)) {
+                submenuContainer.classList.remove("active");
+            }
+        });
+    });
+
+</script>
