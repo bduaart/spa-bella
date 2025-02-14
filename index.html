@@ -59,18 +59,41 @@
 
 
     <section class="contact">
-        <h2>Entre em Contato</h2>
         <div class="contact-container">
-            <form>
-                <input type="text" placeholder="Nome" required>
-                <input type="email" placeholder="E-mail" required>
-                <textarea placeholder="Mensagem"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?..." width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
                 </iframe>
             </div>
+
+            <div class="contact-text-container">
+                <h2 class="contact-text">Entre em Contato</h2>
+                <p>Quer relaxar e renovar suas energias?.</p>
+                <p>Entre em contato conosco! Nossa equipe está pronta para oferecer a melhor experiência de bem-estar para você.</p>
+                <p>Endereço: Rua da Serenidade, 123 - Bairro Harmonia</p>
+                <p>Telefone: +55 019 1234-5678</p>
+                <p>E-mail: contato@momentumspa.com</p>
+                <form>
+                    <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome"  required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem"></textarea>
+                    </div>
+
+                    <button type="submit" class="form-btn">Enviar</button>
+                </form>
+
+            </div>
+
         </div>
     </section>
 
